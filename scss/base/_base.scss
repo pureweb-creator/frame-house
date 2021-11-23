@@ -1,0 +1,158 @@
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-inline-flex{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-start{
+    align-items: flex-start;
+}
+
+.align-items-end{
+    align-items: end;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
+}
+
+.justify-content-end{
+    align-items: flex-end;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+::selection{
+    background: $dark;
+    color: $white;
+}
+
+::-moz-selection{
+    background: $dark;
+    color: $white;
+}
+
+::-webkit-selection{
+    background: $dark;
+    color: $white;
+}
+
+::-ms-selection{
+    background: $dark;
+    color: $white;
+}
+
+::-o-selection{
+    background: $dark;
+    color: $white;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: smooth;
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+h1,h2{
+    font-family: "Montserrat Alternates",sans-serif;
+    color: inherit;
+}
+
+h1{
+    font-size: 42px;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 1.2173913043478262em;
+}
+
+::-webkit-scrollbar{
+    background: $dark;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(135, 133, 133);
+    border-radius: 8px;
+}
+
+
+@mixin btn{
+    padding: 13px 30px;
+    background: #2F271C;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.362142857142857em;
+    transition: all .3s ease;
+
+    &:hover{
+        box-shadow: 5px 5px 15px rgba($dark,0.5);
+        background: darken($dark,3%);
+    }
+}
+
+
+@mixin center-h{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin center-v{
+    display: flex;
+    align-items: center;
+}
+
+@mixin center-both{
+    @include center-h;
+    @include center-v;
+}

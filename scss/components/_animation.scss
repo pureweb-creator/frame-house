@@ -1,0 +1,101 @@
+.slide-left{
+    position: relative;
+    animation: slide-left .8s ease;
+}
+
+.slide-right{
+    position: relative;
+    animation: slide-right .8s ease;
+}
+
+.bounce-down{
+    animation-name:bounce-down;
+    animation-duration:1.3s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes slide-left{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0
+    }
+}
+
+@keyframes slide-right{
+    from{
+        right: 100%;
+    }
+    to{
+        right: 0
+    }
+}
+
+@keyframes slide-top{
+    from{
+        top: -100%;
+    }
+    to{
+        top: 10%
+    }
+}
+
+@keyframes slide-bottom{
+    from{
+        bottom: -100%
+    }
+    to{
+        bottom: 10%
+    }
+}
+
+@keyframes bounce-down{
+    from{
+        bottom: 0
+    }
+    30%{
+        bottom: 15px;
+    }
+    70%{
+        bottom: 5px
+    }
+    to{
+        bottom: 0;
+    }
+}
+
+@keyframes pulse {
+    from{
+        width: 75px;
+        height: 75px;
+        background: rgba($dark,.8);
+    }
+
+    to{
+        width: 110px;
+        height: 110px;
+        background: rgba($dark,0);
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
