@@ -72,13 +72,13 @@
     from{
         width: 75px;
         height: 75px;
-        background: rgba($dark,.8);
+        background: rgba($accent,.8);
     }
 
     to{
         width: 110px;
         height: 110px;
-        background: rgba($dark,0);
+        background: rgba($accent,0);
     }
 }
 
