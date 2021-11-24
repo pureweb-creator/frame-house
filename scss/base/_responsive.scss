@@ -217,10 +217,18 @@
         padding: 50px 0;
     }
 
+    .tabs__caption{
+        margin-bottom: 0 !important;
+    }
 
-    .section-title{
-        font-size: 25px;
-        margin-bottom: 61px;
+    .tabs__caption li{
+        margin-right: 20px;
+    }
+
+
+    .section-title,.tabs__title{
+        font-size: 25px !important;
+        margin-bottom: 61px !important;
 
 
         &::after{

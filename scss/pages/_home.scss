@@ -67,6 +67,10 @@
     overscroll-behavior: auto contain;
 }
 
+.second-screen{
+    transition: all .3s ease;;
+}
+
 .side_left,.second-screen_left{
     position: relative;
     &::after{
@@ -225,6 +229,38 @@
     background: #333;
     padding-bottom: 100px;
     padding-top: 100px;
+}
+
+.tabs__caption{
+    margin-bottom: 60px !important;
+    li{
+        margin-right: 50px;
+        cursor: pointer;
+        // transition: all .3s ease;
+
+        .tabs__title{
+            margin-bottom: 0;
+            font-size: 42px;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    li.active,li:hover{
+        color: $accent
+    }
+}
+
+.tabs__content {
+    display: none;
+    // transition: all .3s ease;
+    // opacity: 0; /* по умолчанию прячем все блоки */
+    // visibility: hidden;
+}
+.tabs__content.active {
+    display: flex;
+    // opacity: 1;
+    // visibility: visible;  /* по умолчанию показываем нужный блок */
 }
 
 .section-title{
